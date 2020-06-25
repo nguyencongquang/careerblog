@@ -9,41 +9,44 @@
 
         body {
             margin: 0;
-            font: 400 13px arial,sans-serif;
+            /*font: 400 13px arial,sans-serif;*/
         }
 
         .header {
             /* The overflow property specifies whether to clip content when an element's content is too big to fit in a specified area.*/
             overflow: hidden;
-            background-color: #f1f1f1;
+            /*background-color: #f1f1f1;*/
             /* top, bottom 20px, right, left 10px*/
             padding: 20px 10px;
         }
 
         .header a {
             float: left;
-            color: black;
+            color: #303D46;
             text-align: center;
             padding: 12px;
             text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
+            /*font-size: 1.7rem;*/
+            /*line-height: 25px;*/
             border-radius: 4px;
+            white-space: nowrap;
+            line-height: 1;
+            text-decoration: none!important;
         }
 
         .header a.logo {
-            font-size: 25px;
-            font-weight: bold;
+            /*font-size: 25px;*/
+            /*font-weight: bold;*/
         }
 
         .header a:hover {
-            background-color: #ddd;
+            /*background-color: #ddd;*/
             color: black;
         }
 
         .header a.active {
-            background-color: dodgerblue;
-            color: white;
+            /*background-color: dodgerblue;*/
+            /*color: white;*/
         }
 
         .header-right {
@@ -69,15 +72,36 @@
     <title>My CV</title>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="header">
-        <a href="#default" class="logo">YourLogo</a>
+<div class="container-fluid" style="border-style: none">
+    <div class="header" style="border-style: none">
+        <a href="#default" class="logo">CareerBlog</a>
         <div class="header-right">
-            <a class="active" href="#home">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a class="active" href="#home">CV</a>
+            <a href="#contact">Books</a>
+            <a href="#about">Coding</a>
+            <a href="#about">Inspiring Stories</a>
         </div>
     </div>
+    <div style="border-style: none">
+        <div style="border-style: none; padding-left: 10%">
+            <h3>One Page CV of Nguyen Cong Quang</h3>
+            <div style="float:left">
+                <span>2020 Jul 26 |</span>
+                <span style="vertical-align: middle;"><svg class="bi bi-clock" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+                    <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                </svg></span>
+                <span>1 min read</span>
+            </div>
+        </div>
+    </div>
+<!--    get new line after using float left-->
+    <br style="clear:both" />
+    <div style="border-style: none; background-color: bisque; position: absolute; left: 0">
+        background article
+    </div>
+
+
 </div>
 
 <!-- Optional JavaScript -->
