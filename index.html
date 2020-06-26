@@ -64,6 +64,15 @@
                 /*float: none;*/
                 display: none;
             }
+
+            .cv-image {
+                width: 40px;
+                height: 40px;
+            }
+
+            .cv-description {
+                display: none;
+            }
         }
     </style>
     <!-- Bootstrap CSS -->
@@ -97,9 +106,40 @@
     </div>
 <!--    get new line after using float left-->
     <br style="clear:both" />
-    <div style="border-style: none; background-color: bisque; position: absolute; left: 0">
-        background article
+<!--    <div style="border-style: none; background-color: bisque; position: absolute; left: 0;width: 100%">-->
+<!--        background article-->
+<!--    </div>-->
+    <div class="row">
+        <div class="col-md-1">
+            share
+        </div>
+        <div class="col-md-10">
+            <div >
+                For those who do not know, Emmanuel Macron is a French politician who is the President of France. Easily find out all his previous political and professional experience in this one-page CV.
+            </div>
+            <div class="border">
+                <div style="padding: 10px; margin: 10px" class="border">
+                    <div class="row">
+                        <div class="col-2">
+                            <img width="150" height="150" src="cv.jpeg" class="cv-image rounded-circle">
+                        </div>
+                        <div class="col-10">
+                            <span>Nguyen Cong Quang</span> <br/>
+                            <span>PHP developer</span> <br/>
+
+                            <span class="cv-description">
+                                Optimistic and forward thinking with the desire to understand the needs of people and to come up a solution
+                                that work and are fair. Have more than 15 years experiences in PHP programming.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
+
 
 
 </div>
